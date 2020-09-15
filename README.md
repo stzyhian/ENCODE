@@ -2,6 +2,9 @@
 
 This repository contains the implementation of ENCODE which estimates the relative 6-DOF pose between two adjacent lidar scans based on end-to-end deep network
 
+_An example of using ENCODE:_
+![ptcl](./images/encode.gif)
+
 ## Publication
 
 ## Pre-trained Models
