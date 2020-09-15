@@ -36,7 +36,14 @@ Ubuntu 64-bit 18.04.
 * scipy==1.5.2
 * PyYAML==5.1.1
 
+```bash
+virtualenv -p /usr/bin/python3 venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
 ## Build
+Modify the infer/net.py and set the dataset path and model path
 ```bash
 catkin_make -DCMAKE_BUILD_TYPE=Release
 ```
