@@ -9,16 +9,25 @@ _An example of using ENCODE:_
 
 ## Pre-trained Models
 
-- [kitti-resnet18](https://drive.google.com/file/d/1nobeoluR9XjWoHrb_1jo9iMolX9ofLN1/view?usp=sharing)
+- [kitti-ResNet18](https://drive.google.com/file/d/1nobeoluR9XjWoHrb_1jo9iMolX9ofLN1/view?usp=sharing)
+- [kitti-ResNet50](https://drive.google.com/file/d/1wOVkwGH0MUJdZQQD4Ya_gFOPKeHggiAo/view?usp=sharing)
+- [kitti-SqueezeNet](https://drive.google.com/file/d/1aVxP9oQl2YLQ8hr0dyPU_1fXcAXmTS4s/view?usp=sharing)
 
 ## Evaluation
 
 Odometry error:
-| Dataset         | Translation      | Rotation            |
-|-----------------|------------------|---------------------|
-| `KITTI 00-06`   | 1.12 %           | 0.0049 [deg/m]      |
-| `KITTI 07-10`   | 1.02 %           | 0.0048 [deg/m]      |
-| `KITTI 10-21`   | 1.86 %           | 0.0059 [deg/m]      |
+| Dataset         | Translation         | Rotation         |
+|-----------------|---------------------|------------------|
+| `KITTI 00-06`   | 1.12 %              | 0.49             |
+| `KITTI 07-10`   | 1.02 %              | 0.48             |
+| `KITTI 10-21`   | 1.86 %              | 0.59             |
+
+
+| Model           | Translation (00-06) | Rotation (00-06) | Translation (07-10) | Rotation (07-10) |
+|-----------------|---------------------|------------------|---------------------|------------------|
+| ResNet18        | 1.12 %              | 0.49             | 1.02 %              | 0.48             |
+| ResNet50        | 1.14 %              | 0.60             | 1.25 %              | 0.59             |
+| SqueezeNet      | 1.19 %              | 0.64             | 1.19 %              | 0.69             |
 
 ## Dependencies
 
